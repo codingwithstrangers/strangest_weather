@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">Strangest Weather</div>
+            <div class="toggle_box">
+                ° C
+                <div class="toggle-wrapper red">
+                    <input class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-container">
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+                ° F
+            </div>
+            <input class="search_input" placeholder="Enter city name" type="text"></input>
+            <button class="submit">Submit</button>
+        </header>
+
+        <main class="content-a">
+            <div id="card_a_container">
+                <div id="current_tem">
+                    100°
+                </div>
+                <img id="sunny_image" src="https://www.svgrepo.com/show/422002/day-forecast-hot.svg" width="100px"
+                    height="100px">
+
+
+                <div class="container_low">
+                    <label class="low_label">Low:</label>
+                    <div id="low_temp">90°</div>
+                </div>
+                <div class="container_high">
+                    <label class="high_label">High:</label>
+                    <div id="low_temp">110°</div>
+                </div>
+                <label class="weather_type"> Mostly sunny</label>
+
+                <div class="city">Chicago, IL, Unitied States</div>
+                <div class="date-time">
+                    <div class="time">17:55</div>
+                    <p class="date">Mon, Aug 5 2024</p>
+                </div>
+            </div>
+            <div class="time_temp">
+                <div id="weather-hourly" class="weather-current weather-hourly">
+                    <div class="hour-data data-one">
+                        <div class="hour-time">00:00</div>
+                        <div class="hour-temp">16.6°</div>
+                        <div class="conditions">Clear</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422020/forecast-moon-night.svg"
+                                height="80" alt="clear-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">01:00</div>
+                        <div class="hour-temp">16.2°</div>
+                        <div class="conditions">Clear</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422020/forecast-moon-night.svg"
+                                height="80" alt="clear-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">02:00</div>
+                        <div class="hour-temp">15.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">03:00</div>
+                        <div class="hour-temp">15.3°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">04:00</div>
+                        <div class="hour-temp">15.2°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">05:00</div>
+                        <div class="hour-temp">14.7°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">06:00</div>
+                        <div class="hour-temp">14.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">07:00</div>
+                        <div class="hour-temp">15.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">08:00</div>
+                        <div class="hour-temp">17.4°</div>
+                        <div class="conditions">Overcast</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                                height="80" alt="cloudy" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">09:00</div>
+                        <div class="hour-temp">19°</div>
+                        <div class="conditions">Overcast</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                                height="80" height="80" alt="cloudy" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">10:00</div>
+                        <div class="hour-temp">19.6°</div>
+                        <div class="conditions">Overcast</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                                height="80" alt="cloudy" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">11:00</div>
+                        <div class="hour-temp">20.8°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">12:00</div>
+                        <div class="hour-temp">21.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">13:00</div>
+                        <div class="hour-temp">23.4°</div>
+                        <div class="conditions">Overcast</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                                height="80" alt="cloudy" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">14:00</div>
+                        <div class="hour-temp">24.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">15:00</div>
+                        <div class="hour-temp">25.2°</div>
+                        <div class="conditions">Overcast</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                                height="80" alt="cloudy" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">16:00</div>
+                        <div class="hour-temp">25.6°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">17:00</div>
+                        <div class="hour-temp">24.7°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">18:00</div>
+                        <div class="hour-temp">23.7°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">19:00</div>
+                        <div class="hour-temp">22.9°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">20:00</div>
+                        <div class="hour-temp">21.7°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                                height="80" alt="partly-cloudy-day" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">21:00</div>
+                        <div class="hour-temp">20.2°</div>
+                        <div class="conditions">Clear</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422020/forecast-moon-night.svg"
+                                height="80" alt="clear-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">22:00</div>
+                        <div class="hour-temp">19.1°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons"></div>
+                    </div>
+                    <div class="hour-data data-one">
+                        <div class="hour-time">23:00</div>
+                        <div class="hour-temp">18.4°</div>
+                        <div class="conditions">Partially cloudy</div>
+                        <div class="hour-icon"><img src="https://www.svgrepo.com/show/422011/cloud-forecast-moon-2.svg"
+                                height="80" alt="partly-cloudy-night" class="hourly-icon icons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <main class="content-b">Content B
+        <div class="weather-weekly">
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Mon, Aug 5</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">19.7°</div>
+                    <div class="weekday-min">Low: 14.6°</div>
+                    <div class="weekday-max">High: 25.6°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Tue, Aug 6</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">20°</div>
+                    <div class="weekday-min">Low: 17.4°</div>
+                    <div class="weekday-max">High: 24.2°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Wed, Aug 7</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">18.1°</div>
+                    <div class="weekday-min">Low: 13.6°</div>
+                    <div class="weekday-max">High: 22.5°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Thu, Aug 8</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422022/cloud-cloudy-forecast.svg"
+                        height="80" alt="Icon for cloudy"
+                            class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">17.9°</div>
+                    <div class="weekday-min">Low: 15.1°</div>
+                    <div class="weekday-max">High: 20.4°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Fri, Aug 9</div>
+                    <div class="weekday-icon"><img
+                            img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">20.3°</div>
+                    <div class="weekday-min">Low: 17.2°</div>
+                    <div class="weekday-max">High: 23.3°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Sat, Aug 10</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">22°</div>
+                    <div class="weekday-min">Low: 15.2°</div>
+                    <div class="weekday-max">High: 29°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Sun, Aug 11</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422002/day-forecast-hot.svg"
+                        height="80"
+                            alt="Icon for clear-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">25.5°</div>
+                    <div class="weekday-min">Low: 19.7°</div>
+                    <div class="weekday-max">High: 31.4°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Mon, Aug 12</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">21.9°</div>
+                    <div class="weekday-min">Low: 19.3°</div>
+                    <div class="weekday-max">High: 24.3°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Tue, Aug 13</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">20.6°</div>
+                    <div class="weekday-min">Low: 17.5°</div>
+                    <div class="weekday-max">High: 24.9°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Wed, Aug 14</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">18.3°</div>
+                    <div class="weekday-min">Low: 16.4°</div>
+                    <div class="weekday-max">High: 20.8°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Thu, Aug 15</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">16°</div>
+                    <div class="weekday-min">Low: 14.4°</div>
+                    <div class="weekday-max">High: 18.8°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Fri, Aug 16</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">17.4°</div>
+                    <div class="weekday-min">Low: 15.1°</div>
+                    <div class="weekday-max">High: 20.5°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Sat, Aug 17</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">17°</div>
+                    <div class="weekday-min">Low: 15.1°</div>
+                    <div class="weekday-max">High: 20°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Sun, Aug 18</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">16.5°</div>
+                    <div class="weekday-min">Low: 13.4°</div>
+                    <div class="weekday-max">High: 20.1°</div>
+                </div>
+            </div>
+            <div class="day-data">
+                <div class="weekday-data">
+                    <div class="weekday">Mon, Aug 19</div>
+                    <div class="weekday-icon"><img
+                        img src="https://www.svgrepo.com/show/422010/cloudy-forecast-sun.svg"
+                        height="80"
+                            alt="Icon for partly-cloudy-day" class="weekly-icon icons"></div>
+                </div>
+                <div class="weekday-temp">
+                    <div class="day-temp">16.5°</div>
+                    <div class="weekday-min">Low: 12.8°</div>
+                    <div class="weekday-max">High: 20.6°</div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+<script>weather.js</script>
+
+</html>
