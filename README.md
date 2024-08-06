@@ -2,7 +2,7 @@
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjAyMXphYmdkeWhsZjdzNWIyMjg0MGt5N3Rxd3dvZnFjZ2NuZXExMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jvOHlU7qhcnsEGuTQZ/giphy.gif" width="150"/>
 </div>
 
-### Strangest Login
+### Strangest Weather
 
 Before we get into the details, a few disclaimers: This is part of my training exercise for a self-paced homework assignment. If you want to use this, feel free!
 

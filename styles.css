@@ -1,5 +1,10 @@
 *{
     border: 1px solid green ;
+    
+}
+
+p{
+  margin: 0;
 }
 
 body, html {
@@ -22,7 +27,7 @@ body, html {
 
 .header {
     grid-area: header;
-    background: #333;
+    background: #6dc065;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -34,20 +39,79 @@ body, html {
 
 .content-a {
     grid-area: content-a;
-    background: #f4f4f4;
+    background: #c2ffbc;
 }
 
 .content-b {
     grid-area: content-b;
-    background: #e4e4e4;
+    background: #c2ffbc;
 }
 
 .footer {
     grid-area: footer;
-    background: #333;
+    background: #6dc065;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* MaIN CONTENT */
+.content-a{
+  font-size: x-large;
+}
+
+#card_a_container{
+  background: #6dc065;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px; 
+}
+.top_card_a {
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.low_high_container{
+  
+  font-size: medium;
+  display: flex;
+  margin-left: 239px;
+}
+
+#weather-hourly {
+  height: 200px; /* Adjust the height as needed */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  border: 1px solid #ccc; /* Optional: for visual feedback */
+}
+
+.hour-data {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Optional: for visual separation */
+}
+
+.hour-data-data-one{
+  display: flex;
+  flex-direction: column;
+  }
+.hour-time{
+  margin-left: 10px;
+}
+
+.hour-icon{
+  margin-right: 10px;
+}
+.hourly-card{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    background: #6dc065;
+    color: #fff;
+    border-radius: 10px; 
 }
 
 /* toggle */
@@ -145,6 +209,12 @@ body, html {
       transform: translateX(100%);
     }
   }
+
+
+  /* Container B */
+
+
+
 
 
   /* lower bar */
