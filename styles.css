@@ -33,8 +33,19 @@ body, html {
     text-align: center;
 }
 
-.content-a, .content-b {
+.content-a {
     padding: 20px;
+}
+
+.content-b {
+      width: 100%;
+      /* max-width: 430px; */
+      /* height: 100vh; */
+      /* max-height: 932px; */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
 }
 
 .content-a {
@@ -212,10 +223,57 @@ body, html {
 
 
   /* Container B */
-
-
-
-
+  /* .content-b {
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    max-height: 932px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .weather-weekly {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    /* width: 100%; */
+  }
+  
+  .day-data {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; 
+    background: #6dc065;
+    color: #fff;
+    font-size: x-large;
+  }
+  
+  .weekly-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .weekday {
+    font-size: large;
+  }
+  
+  .weekday-icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .weekday-temp {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
   /* lower bar */
   
