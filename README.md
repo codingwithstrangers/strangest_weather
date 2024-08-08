@@ -39,12 +39,12 @@ Coding with Strangers, aka Heero
 
 ### Features
 
-- [ ] Celsius and Fahrenheit options
+- [x] Celsius and Fahrenheit options
 - [ ] Responsive Design: Adapts to different screen sizes.
 - [x] Actual weather conditions displayed by images.
 - [ ] Hourly weather updates.
 - [ ] 7-day weather forecast.
-- [ ] Vertical and horizontal scroll options.
+- [x] Vertical and horizontal scroll options.
 
 ### What You Will Need
 
@@ -52,6 +52,7 @@ Files Included:
 - `index.html` – Main HTML file for the login template.
 - `styles.css` – CSS file for styling the template.
 - `script.js` – JavaScript file for interactive features and animations.
+- `gitignore` - was going to make backend server to story keys, but that was out of scope
 
 ### Prerequisites
 
@@ -62,4 +63,5 @@ Before running the project, ensure you have the following:
 
 Feel free to submit issues, fork the repository, and make pull requests. Your contributions are welcome! Since I might not address these bugs myself, I’ll probably try to rebuild this in React. Here are the known bugs:
 
-- [ ] Work in Progress
+- [ ] API call out to weather source not used, due to financial requirements, feel free to use free weath api and finish
+- [ ] I am using grid to make the app responisve but the scope was for the API the media@ are setup if you want to use them
