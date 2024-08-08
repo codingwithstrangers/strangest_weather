@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid System</title>
+    <title>Strangest Weather</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,24 +15,26 @@
             <div class="toggle_box">
                 ° C
                 <div class="toggle-wrapper red">
-                    <input class="toggle-checkbox" type="checkbox">
+                    <input id="toggleUnit"  class="toggle-checkbox" type="checkbox">
                     <div class="toggle-container">
                         <div class="toggle-ball"></div>
                     </div>
                 </div>
                 ° F
             </div>
-            <input class="search_input" placeholder="Enter city name" type="text"></input>
-            <button class="submit">Submit</button>
+            <input type="text" id="city-input" placeholder="Type a city name..." autocomplete="off">
+            <ul id="city-dropdown" class="dropdown"></ul>
+            
+            <button id="getWeatherButton" class="submit">Submit</button>
         </header>
 
         <main class="content-a">
             <div id="card_a_container">
                 <div class="top_card_a">
-                    <div id="current_tem">
+                    <div id="current_temp">
                         100°
                     </div>
-                    <img id="sunny_image" src="https://www.svgrepo.com/show/422002/day-forecast-hot.svg" width="100px"
+                    <img id="current_image" src="https://www.svgrepo.com/show/422002/day-forecast-hot.svg" width="100px"
                         height="100px">
                 </div>
                 <div class="low_high_container">
@@ -45,7 +47,7 @@
                         <div id="low_temp">110°</div>
                     </div>
                 </div>
-                <label class="weather_type"> Mostly sunny</label>
+                <label class="weather_type">Mostly sunny</label>
 
                 <div class="city">Chicago, IL, Unitied States</div>
                 <div class="date-time">
@@ -556,6 +558,7 @@
         <!-- <footer class="footer">Footer</footer> -->
     </div>
 </body>
-<script>weather.js</script>
+<script src="weather.js"></script>
+<script src="api_key.js"></script>
 
 </html>
